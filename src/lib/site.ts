@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/logocircle.jpg";
+import logoAsset from "../assets/logocircle.jpg";
 
 export const SITE = {
   name: "Sthololwazi Projects (Pty) Ltd",
