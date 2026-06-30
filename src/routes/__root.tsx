@@ -10,10 +10,8 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import logoAsset from "../assets/sthololwazi-logo.jpg.asset.json";
+import logo from "@../assts/logocircle.jpg";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-
-const logoUrl = logoAsset.url;
 import { Toaster } from "../components/ui/sonner";
 
 function NotFoundComponent() {
@@ -86,19 +84,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Sthololwazi Projects" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Oficial website of Sthololwazi Projects" },
-      { property: "og:title", content: "Oficial website of Sthololwazi Projects" },
-      { name: "twitter:title", content: "Oficial website of Sthololwazi Projects" },
-      { name: "description", content: "A professional corporate website for a South African civil engineering, building, and material supply firm." },
-      { property: "og:description", content: "A professional corporate website for a South African civil engineering, building, and material supply firm." },
-      { name: "twitter:description", content: "A professional corporate website for a South African civil engineering, building, and material supply firm." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/78e2ef0c-7a49-4256-8862-07a6e42f47f4" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/78e2ef0c-7a49-4256-8862-07a6e42f47f4" },
+      //{Title: "Official website of Sthololwazi Projects" },
+      { property: "og:title", content: "Official website of Sthololwazi Projects" },
+      { name: "twitter:title", content: "Official website of Sthololwazi Projects" },
+      { name: "description", content: "Sthololwazi Projects (Pty) Ltd is a CIDB-registered South African construction company delivering civil engineering, building construction, renovations, maintenance and material supply throughout Mpumalanga." },
+      { property: "og:description", content: "Sthololwazi Projects (Pty) Ltd is a CIDB-registered South African construction company delivering civil engineering, building construction, renovations, maintenance and material supply throughout Mpumalanga." },
+      { name: "twitter:description", content: "Sthololwazi Projects (Pty) Ltd is a CIDB-registered South African construction company delivering civil engineering, building construction, renovations, maintenance and material supply throughout Mpumalanga." },
+      {property: "og:image", content: "https://sthololwaziprojects.co.za/og-image.jpg",},
+      {name: "twitter:image",  content: "https://sthololwaziprojects.co.za/og-image.jpg",},
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/jpeg", href: logoUrl },
-      { rel: "apple-touch-icon", href: logoUrl },
+      { rel: "icon", type: "image/jpeg", href: logo },
+      { rel: "apple-touch-icon", href: logo },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
